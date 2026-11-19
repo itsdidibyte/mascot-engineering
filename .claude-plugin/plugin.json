@@ -1,0 +1,22 @@
+{
+  "name": "mascot-engineering",
+  "version": "0.2.0-alpha",
+  "description": "Measured 2D-to-3D for mascots: turn front/side/back reference images into a Blender blockout whose silhouettes provably match the drawings (silhouette measurement, consistency checks, camera-matched renders, specialist subagents).",
+  "author": {
+    "name": "DIDIBYTE",
+    "url": "https://github.com/itsdidibyte"
+  },
+  "homepage": "https://github.com/itsdidibyte/mascot-engineering",
+  "repository": "https://github.com/itsdidibyte/mascot-engineering",
+  "license": "MIT",
+  "keywords": [
+    "blender",
+    "3d",
+    "mascot",
+    "character",
+    "2d-to-3d",
+    "turnaround",
+    "modeling"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}

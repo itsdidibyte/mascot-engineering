@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "character_id": "sample_capsule_mascot",
+  "package_mode": "SPEC_ONLY",
+  "scale_mode": "relative",
+  "unit": "normalized",
+  "coordinate_system": "RH_X_CHARACTER_RIGHT_Y_FORWARD_Z_UP",
+  "root_anchor": "ground at center of feet; up = +Z; relative character overall nominal height ~1.6",
+  "source_references": [],
+  "camera_views": [],
+  "materials": [
+    {
+      "id": "shell",
+      "base_color_rgba": [
+        0.8,
+        0.88,
+        0.92,
+        1
+      ],
+      "roughness": 0.42,
+      "metallic": 0.05,
+      "evidence_status": "approved_design",
+      "notes": "Demonstration-only material"
+    },
+    {
+      "id": "dark",
+      "base_color_rgba": [
+        0.08,
+        0.1,
+        0.12,
+        1
+      ],
+      "roughness": 0.22,
+      "metallic": 0.15,
+      "evidence_status": "approved_design",
+      "notes": "Demonstration-only material"
+    }
+  ],
+  "components": [
+    {
+      "id": "body",
+      "name": "Rounded torso",
+      "parent_id": null,
+      "geometry": {
+        "type": "ellipsoid",
+        "radii": [
+          0.3,
+          0.23,
+          0.45
+        ],
+        "segments": 48,
+        "rings": 24
+      },
+      "location": [
+        0,
+        0,
+        0.8
+      ],
+      "rotation_euler_deg": [
+        0,
+        0,
+        0
+      ],
+      "material_id": "shell",
+      "articulation": "none",
+      "evidence": {
+        "status": "approved_design",
+        "method": "synthetic tutorial parameters; no image measurements",
+        "reference_ids": []
+      }
+    },
+    {
+      "id": "head",
+      "name": "Rounded head",
+      "parent_id": null,
+      "geometry": {
+        "type": "ellipsoid",
+        "radii": [
+          0.28,
+          0.24,
+          0.31
+        ],
+        "segments": 48,
+        "rings": 24
+      },
+      "location": [
+        0,
+        0.02,
+        1.37
+      ],
+      "rotation_euler_deg": [
+        0,
+        0,
+        0
+      ],
+      "material_id": "shell",
+      "articulation": "none",
+      "evidence": {
+        "status": "approved_design",
+        "method": "synthetic tutorial parameters; no image measurements",
+        "reference_ids": []
+      }
+    },
+    {
+      "id": "eye_left",
+      "name": "Optical feature left",
+      "parent_id": "head",
+      "geometry": {
+        "type": "ellipsoid",
+        "radii": [
+          0.045,
+          0.025,
+          0.1
+        ],
+        "segments": 32,
+        "rings": 16
+      },
+      "location": [
+        -0.11,
+        0.22,
+        0.02
+      ],
+      "rotation_euler_deg": [
+        0,
+        0,
+        0
+      ],
+      "material_id": "dark",
+      "articulation": "rigid",
+      "evidence": {
+        "status": "approved_design",
+        "method": "synthetic tutorial parameters",
+        "reference_ids": []
+      }
+    },
+    {
+      "id": "eye_right",
+      "name": "Optical feature right",
+      "parent_id": "head",
+      "geometry": {
+        "type": "ellipsoid",
+        "radii": [
+          0.045,
+          0.025,
+          0.1
+        ],
+        "segments": 32,
+        "rings": 16
+      },
+      "location": [
+        0.11,
+        0.22,
+        0.02
+      ],
+      "rotation_euler_deg": [
+        0,
+        0,
+        0
+      ],
+      "material_id": "dark",
+      "articulation": "rigid",
+      "evidence": {
+        "status": "approved_design",
+        "method": "synthetic tutorial parameters",
+        "reference_ids": []
+      }
+    },
+    {
+      "id": "base",
+      "name": "Rounded plinth",
+      "parent_id": null,
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.36,
+        "depth": 0.12,
+        "vertices": 48
+      },
+      "location": [
+        0,
+        0,
+        0.08
+      ],
+      "rotation_euler_deg": [
+        0,
+        0,
+        0
+      ],
+      "material_id": "dark",
+      "articulation": "none",
+      "evidence": {
+        "status": "approved_design",
+        "method": "synthetic tutorial parameters",
+        "reference_ids": []
+      }
+    }
+  ],
+  "unresolved_issues": [
+    "Illustrative geometry only; no photographic or AI reference measurements; rigging untested; image-matching untested"
+  ]
+}

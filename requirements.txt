@@ -1,0 +1,7 @@
+numpy>=1.24
+Pillow>=10
+scipy>=1.10
+jsonschema>=4.18,<5
+# optional: smooth visual hull surface
+scikit-image>=0.21
+# Blender 4.2+ is external (not pip). Blender's bundled Python already has numpy.

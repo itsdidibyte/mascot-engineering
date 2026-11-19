@@ -1,0 +1,15 @@
+{
+  "name": "didibyte-3d",
+  "description": "DIDIBYTE plugins for 3D character work",
+  "owner": {
+    "name": "DIDIBYTE",
+    "url": "https://github.com/itsdidibyte"
+  },
+  "plugins": [
+    {
+      "name": "mascot-engineering",
+      "source": "./",
+      "description": "Measured 2D-to-3D mascot pipeline for Blender (alpha)"
+    }
+  ]
+}
